@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Qr code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <div class="interface" id ="interface">
+        <div class="block-1" id="block-1">
+            <div class="texto-block1">
+            <h1> Bem Vindo </h1>
+            <h3> Aqui você pode cria se Qr code gratìs</h3>
+            <div class="btn"id="btn-criar"><a href="#block-2">Criar</a></div>
+            </div>
+            
+            <div class="imagem" id="imagem" >
+                <img src="QRCode-rafiki.svg" alt="">
+
+            </div>
+        </div>
+        <div class="block-2" id="block-2">
+            <div class = esquerda>
+                <div class="back-e">
+                    <ul class="selecao" id="selecao">
+                        <li><span class="material-symbols-outlined">
+                            wifi
+                            </span>wifi</li>
+                        <li><span class="material-symbols-outlined">
+                            link
+                            </span>Link</li>
+                        <li><span class="material-symbols-outlined">
+                            image
+                            </span>Foto</li>
+                        <li><span class="material-symbols-outlined">
+                            videocam
+                            </span>video</li>
+                        <li><span class="material-symbols-outlined">
+                            picture_as_pdf
+                            </span>PDF</li>
+                        <li><span class="material-symbols-outlined">
+                            music_note
+                            </span>MP3</li>
+                    </ul>
+                    <div class="div-input">
+                        <textarea placeholder="Insira seu web site aqui" id="input-text"></textarea>
+                        <input type="text" id="input-cont">
+                        <p id="dica">( Após inserir o texte clique em "Gerar")</p>
+                        
+                    </div>
+                    
+                    <div class="btn" id="btn-gerar"> Gerar</div>
+
+                </div>
+            </div>
+            <div class="direita">
+                <div class="back-d">
+                    <span>Faça Seu Download</span>
+                    <div id="container"></div>
+                    <img id="img" src="qr.png" alt="Qr code" width="50%" height="auto">
+                    <div class="btn" id="btn-baixar"> Baixar</div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
