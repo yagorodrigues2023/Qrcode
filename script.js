@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded",function(){
             if(arquivocom !==''){
                 if(arquivocom.includes("image")){
                     upp.innerHTML=arquivocom
+                    dicaup.style.display = "none"
                     
                 }
                 else{
@@ -202,6 +203,7 @@ document.addEventListener("DOMContentLoaded",function(){
             if(arquivocom !==''){
                 if(arquivocom.includes("video")){
                     upp.innerHTML=arquivocom
+                    dicaup.style.display = "none"
                 }
                 else{
                     inputcont.value=''
@@ -224,6 +226,7 @@ document.addEventListener("DOMContentLoaded",function(){
             if(arquivocom !==''){
                 if(arquivocom.includes("mp3")){
                     upp.innerHTML=arquivocom
+                    dicaup.style.display = "none"
                 }
                 else{
                     inputcont.value=''
@@ -245,6 +248,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
                 if(arquivocom.includes("pdf")){
                     upp.innerHTML=arquivocom
+                    dicaup.style.display = "none"
                     }
                     else{
                         inputcont.value=''
