@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<Html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
             <div class="texto-block1">
             <h1> Bem Vindo </h1>
             <h3> Aqui você pode cria se Qr code gratìs</h3>
-            <div class="btn"id="btn-criar"><a href="#block-2">Criar</a></div>
+            <div class="btn" id="btn-criar"><a href="#block-2">Criar</a></div>
             </div>
             
             <div class="imagem" id="imagem" >
@@ -29,32 +29,83 @@
             <div class = esquerda>
                 <div class="back-e">
                     <ul class="selecao" id="selecao">
+                        <li id="selecionado-0"><span class="material-symbols-outlined">
+                            description
+                            </span>texto</li>
                         <li><span class="material-symbols-outlined">
                             wifi
                             </span>wifi</li>
                         <li><span class="material-symbols-outlined">
                             link
-                            </span>Link</li>
+                            </span>link</li>
                         <li><span class="material-symbols-outlined">
                             image
-                            </span>Foto</li>
+                            </span>foto</li>
                         <li><span class="material-symbols-outlined">
                             videocam
                             </span>video</li>
                         <li><span class="material-symbols-outlined">
                             picture_as_pdf
-                            </span>PDF</li>
+                            </span>pdf</li>
                         <li><span class="material-symbols-outlined">
                             music_note
-                            </span>MP3</li>
+                            </span>mp3</li>
                     </ul>
-                    <div class="div-input">
-                        <textarea placeholder="Insira seu web site aqui" id="input-text"></textarea>
-                        <input type="text" id="input-cont">
-                        <p id="dica">( Após inserir o texte clique em "Gerar")</p>
+                    <div class="div-input" id="div-input">
+                        <textarea placeholder="Insira o texto aqui" id="input-text"></textarea>
+
+                        <p id="dica" class="dica">( Após inserir clique em "Gerar")</p>
+                    </div>
+                    <div class="div-upload-up" id="div-upload-up">
+    
+                        <p id="up-p" class="Principal"></p>
+                        <p id="dica-up" class="dica">( Após inserir clique em "Gerar")</p>
                         
                     </div>
-                    
+                    <div class="div-wifi" id="wifi">
+                        <p>Wifi QR code</p>
+
+                        <div class="form-wifi">
+                        <label class="form-label" for="nomerede">Nome da Rede</label>
+                        <input class="form-input" type="text" id="nomerede">
+                        </div>
+                        <div class="form-wifi">
+                            <label class="form-label" for="nomesenha">Senha</label>
+                            <input class="form-input" type="text" id="nomesenha">
+                        </div>
+
+                        <div class="form-radio" di="form-radio">
+
+                        <label class="form-label" style="margin-top: 1rem;">Criptografia</label>
+                        <div class="radio-seg" id= "criptografia" >
+                            
+                        <input class="radio-input" type="radio" name="seg" id="seg-nem" value="Nenhuma">
+                        <label class="radio-label" for="seg-nem">Nenhuma</label>
+
+
+                        <input class="radio-input" type="radio" name="seg" id="seg-wpa2" value="Wpa">                       
+                        <label class="radio-label" for="seg-wpa2">Wpa</label>
+
+                        <input class="radio-input" type="radio" name="seg" id="seg-wep" value="Wep">                        
+                        <label class="radio-label" for="seg-wep">Wep</label>
+                        
+                        </div>
+                        </div>
+
+
+
+
+                    </div> 
+
+                    <input class="upload" id="input-cont" type="file">
+                    <div class="div-upload" id="div-upload">                    
+                        <label class="label-upload" for="input-cont">
+                            <span class="material-symbols-outlined">upload</span>fazer upload
+                        </label>
+
+                        <label class="label-upload2" for="input-cont">(como .jpg, .pdf, .mp3) </label>
+                    </div>
+
                     <div class="btn" id="btn-gerar"> Gerar</div>
 
                 </div>

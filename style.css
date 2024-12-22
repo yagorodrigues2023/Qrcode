@@ -15,7 +15,7 @@
     box-sizing: border-box;}
 .interface{
     width: 100vw;
-    height: 300vh;
+    height: 200vh;
     display: flex;
     align-items: center;
     flex-direction: column;}
@@ -32,14 +32,21 @@
     display: block;
     margin: 20px;
     color: white;
-    font-size: 15pt;    }
+    font-size: 15pt;}
+
 #btn-criar{
+    color: rgb(42, 42, 202);
     background-color: white;  
     margin-top: 20vh; 
     padding: 1vh 2vw;}
+
 #btn-criar a {
     text-decoration: none;
     color: none;}
+#btn-criar a:link,.btn a:visited,.btn a:hover,.btn a:active {
+            color: inherit; /* Garante que nenhuma cor extra será aplicada */
+            text-decoration: none; /* Remove o sublinhado em todos os estados */
+        }
 .imagem {
     overflow: hidden;
     width: 40vw;
@@ -56,7 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    width: 55vw;
     height: 60%;}
 .back-e{
     display: flex;
@@ -91,6 +98,9 @@
     color: rgb(132, 127, 219); 
     border-color:  rgb(132, 127, 219);
     cursor: pointer;}
+li[id^=selecionado]{
+    color: rgb(132, 127, 219); 
+    border-color:  rgb(132, 127, 219);}
 .direita{
     display: flex;
     align-items: center;
@@ -119,36 +129,146 @@
     margin-bottom: 4rem;
 }
 .div-input {
-    border: 2px solid rgb(95, 95, 95);
     border-radius: 5px;
     outline: none;
     width: 80%;
     height: 50%;}
+
+.div-input input[type = "text"]{
+    border: 2px solid rgb(95, 95, 95);
+
+}
 .div-input textarea , input{
-    font-weight: 600;
-    padding: 10px 0px 10px 10px;
+    color: rgb(95, 95, 95);
     font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px 0px 10px 10px;
     outline: none;
     width: 100%;
     height: auto;}
-.div-input p{
+.dica{
     margin-top: -2.5rem;
     color: rgb(95, 95, 95); 
     padding: 0px 10px 10px 10px;}
 .div-input input{
+    display: none;
+}
+.upload[type = "file"]{
     display: none;}
+.div-upload{
+    height: auto;
+    width: 78%;
+
+}
+.div-upload-up{    
+    padding: 0;
+    display: none;
+    background-color: rgba(95, 95, 95, 0);
+    width: 80%;
+    height: 60%;}
+.Principal{
+    margin: 1.4rem 0 0 0.6rem;
+    color: rgba(95, 95, 95, 0.938);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.div-upload span{
+   margin-bottom: -.4rem;
+   padding: 0;
+   font-size: 20pt;
+   text-align: start;
+}
+.label-upload{
+    margin: 0;
+    text-transform: capitalize;
+    color:rgb(72, 72, 226); 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+.label-upload:hover{
+    letter-spacing: 0.7px;
+    color:rgb(114, 114, 223); 
+}
+
+.label-upload2{
+    color:rgb(95, 95, 95);
+    cursor: pointer;
+
+}
 .btn{
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
-        text-align: center;
-        color: rgb(255, 255, 255);
-        border-radius: 5px;
-        background-color: rgb(42, 42, 202);
-        margin-bottom: 1vh;
-        padding: 1vh 36%;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        transition: all 0.3s ease;}
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(42, 42, 202);
+    margin-bottom: 1vh;
+    padding: 1vh 36%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;}
 .btn:hover{
     letter-spacing: 0.7px;
     background-color: rgb(28, 28, 161);}
+.div-wifi{
+
+    width: 80%;
+    height: 60%;
+    display: none;
+    flex-direction:column;
+    color: black;
+}
+.div-wifi p{
+    color: rgb(95, 95, 95);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.form-wifi{
+    color: rgb(95, 95, 95);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.form-input{
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+    margin:  0 0 1rem;
+    width: 70%;
+    border: 2px solid  rgb(95, 95, 95);
+    border-radius: 10px;
+}
+.form-label{
+    font-size: 1rem; 
+    color: rgb(95, 95, 95);
+    width: 27%;
+}
+.radio-seg{
+    color: rgb(95, 95, 95);
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 2.6rem;
+}
+.radio-label{
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+.form-radio{
+    width: 100%;
+    display: flex;
+
+}
+.form-crip{
+
+}
+.radio-input{
+    width: 50px;
+    background-color: rgba(165, 42, 42, 0);
+}
+
