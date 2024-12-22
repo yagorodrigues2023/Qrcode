@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded",function(){
-    require('dotenv').config();
     const container = document.getElementById("container")
     const selecao = document.getElementById("selecao")
     const li = document.querySelectorAll("#selecao li")
