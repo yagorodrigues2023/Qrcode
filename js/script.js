@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
-
+    require('dotenv').config();
     const container = document.getElementById("container")
     const selecao = document.getElementById("selecao")
     const li = document.querySelectorAll("#selecao li")
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded",function(){
     const formradio = document.querySelectorAll('input[type="radio"]')
     const n_wifi = document.getElementById("nomerede")
     const s_wifi =document.getElementById("nomesenha")
+
     let selecionado 
     let file_update
     let arquivocom =''
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded",function(){
           formData.append('file', file_update);
       
           try {
-            const response = await fetch('https://backend-9bqz.onrender.com/upload', {
+            const response = await fetch(process.env.API, {
               method: 'POST',
               body: formData,
             });
