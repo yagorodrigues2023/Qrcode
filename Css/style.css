@@ -38,7 +38,7 @@
     box-sizing: border-box;}
 .interface{
     width: 100vw;
-    height: 200vh;
+    height: 220vh;
     display: flex;
     align-items: center;
     flex-direction: column;}
@@ -305,7 +305,7 @@ li[id^=selecionado]{
         width: 100vw;
     }
     .block-2{
-        height: 150vh;
+        height: 120vh;
         width: 100vw;
         flex-direction: column;
     }
@@ -364,6 +364,8 @@ li[id^=selecionado]{
         width: 60%;
     }.form-wifi{
         justify-content: flex-end;
+    }.div-upload{
+        width: 90%;
     }
     
 }
