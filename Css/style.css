@@ -320,7 +320,7 @@ li[id^=selecionado]{
     }
     .div-input textarea , input{  
         padding: 0.5rem  0px 1.2rem 10px; 
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .Principal{
         font-size: 1rem;
