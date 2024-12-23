@@ -2,6 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+@keyframes circle-animation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.circle {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(42, 42, 202);
+    border-radius: 50%;
+    animation: circle-animation 2s ease-in-out infinite;
+}
 
 *{
     margin: 0; 
@@ -295,5 +318,14 @@ li[id^=selecionado]{
         width: 100vw;
         height: 56vh;
     }
-
+    .div-input textarea , input{  
+        padding: 0.5rem  0px 1.2rem 10px; 
+        font-size: 1rem;
+    }
+    .Principal{
+        font-size: 1rem;
+    }
+    .dica{  
+        font-size: 0.8rem;
+    }
 }

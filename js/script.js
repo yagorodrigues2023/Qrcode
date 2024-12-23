@@ -1,6 +1,8 @@
+
 document.addEventListener("DOMContentLoaded",function(){
+
     const container = document.getElementById("container")
-    const selecao = document.getElementById("selecao")
+    const load = document.getElementById("load")
     const li = document.querySelectorAll("#selecao li")
     const inputtext = document.getElementById("input-text")
     const inputcont = document.getElementById("input-cont")
@@ -21,15 +23,17 @@ document.addEventListener("DOMContentLoaded",function(){
     let selecionado 
     let file_update
     let arquivocom =''
+
+
     
 
 //Cria o QR code
 
     function gerar(texto){
-
+        container.style.display = "none"
         container.innerHTML = ""
-        img.style.display = "none"
-        container.style.display = "block"
+        img.style.display = "none";
+        load.style.display = "block";
         new QRCode (container,{
             text: texto,
             width: 160,
@@ -38,6 +42,10 @@ document.addEventListener("DOMContentLoaded",function(){
             colorLight: "#ffffff00",
             correctLevel: QRCode.CorrectLevel.H
         })
+            setTimeout(() => {
+            load.style.display = "none";
+            container.style.display = "block";
+        }, 5000);
     } 
     
     //gera o QR code
@@ -80,7 +88,7 @@ document.addEventListener("DOMContentLoaded",function(){
           formData.append('file', file_update);
       
           try {
-            const response = await fetch(process.env.API, {
+            const response = await fetch(window.config.URL, {
               method: 'POST',
               body: formData,
             });
