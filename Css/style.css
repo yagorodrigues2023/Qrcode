@@ -295,7 +295,7 @@ li[id^=selecionado]{
     background-color: rgba(165, 42, 42, 0);
 }
 
-@media (max-width:1500px) {
+@media (max-width:1000px) {
     
     .imagem {
         display: none;
