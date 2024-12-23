@@ -296,16 +296,22 @@ li[id^=selecionado]{
 }
 
 @media (max-width:1000px) {
+    .interface{
+        width: 100vw;
+        height: 200vh;}
     
     .imagem {
+        overflow: hidden;
         display: none;
     }
     .block-1{
-        height: 100vh;
+        overflow: hidden;
+        height: 50vh;
         width: 100vw;
     }
     .block-2{
-        height: 120vh;
+        overflow: hidden;
+        height: 150vh;
         width: 100vw;
         flex-direction: column;
     }
@@ -316,20 +322,24 @@ li[id^=selecionado]{
         width: 100%;
     }
     .esquerda{
+        overflow: hidden;
         padding: 0;
         width: 90%;
         height: 60vh;
         margin-bottom: 2rem;
     }
     .direita{
+        overflow: hidden;
         width: 90%;
-        height: 56vh;
+        height: 60vh;
     }
     .div-input textarea , input{  
+        overflow: hidden;
         padding: 0.5rem  0px 1.2rem 10px; 
         font-size: 1.5rem;
     }
     .Principal{
+        overflow: hidden;
         font-size: 1.3rem;
     }
     .dica{  
@@ -367,5 +377,14 @@ li[id^=selecionado]{
     }.div-upload{
         width: 90%;
     }
+    .btn{
+        overflow: hidden;
+        padding: 1.2vh 30%;
+    }.back-d span{
+        overflow: hidden;
+        font-size: 1.2rem;
+        color: rgb(95, 95, 95);
+        text-align: center;
+        margin: 3rem 0;}
     
 }
