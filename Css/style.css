@@ -295,7 +295,7 @@ li[id^=selecionado]{
     background-color: rgba(165, 42, 42, 0);
 }
 
-@media (max-width:1000px) {
+@media (max-width:1500px) {
     
     .imagem {
         display: none;
@@ -309,13 +309,20 @@ li[id^=selecionado]{
         width: 100vw;
         flex-direction: column;
     }
+    .back-d{
+        width: 100%;
+    }
+    .back-e{
+        width: 100%;
+    }
     .esquerda{
-        width: 100vw;
-        height: 50vh;
+        padding: 0;
+        width: 90%;
+        height: 60vh;
         margin-bottom: 2rem;
     }
     .direita{
-        width: 100vw;
+        width: 90%;
         height: 56vh;
     }
     .div-input textarea , input{  
@@ -323,9 +330,40 @@ li[id^=selecionado]{
         font-size: 1.5rem;
     }
     .Principal{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .dica{  
-        font-size: 0.8rem;
+        font-size: 1.rem;
     }
+
+    .radio-label{
+        font-size: 0.9rem;
+    }
+    .div-wifi p{
+        font-size: 1.5rem;
+    }
+    .div-wifi{
+        
+        width: 95%;
+        height: 60%; 
+    }
+    .radio-seg{
+        color: rgb(95, 95, 95);
+        display: flex;
+        width: 100%;
+        margin-top: 0.3rem;
+        margin-left: 2.6rem;
+    }
+    .form-label{
+        font-size: 1rem; 
+        color: rgb(95, 95, 95);
+        width: 40%;
+        
+    }.form-input{
+        margin-right: 0;
+        width: 60%;
+    }.form-wifi{
+        justify-content: flex-end;
+    }
+    
 }
