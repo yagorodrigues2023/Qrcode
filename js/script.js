@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded",function(){
             setTimeout(() => {
             load.style.display = "none";
             container.style.display = "block";
-        }, 5000);
+        }, 6000);
     } 
     
     //gera o QR code
