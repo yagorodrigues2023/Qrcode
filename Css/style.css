@@ -298,7 +298,7 @@ li[id^=selecionado]{
 @media (max-width:1000px) {
     .interface{
         width: 100vw;
-        height: 200vh;}
+        height: 160vh;}
     
     .imagem {
         overflow: hidden;
@@ -311,7 +311,7 @@ li[id^=selecionado]{
     }
     .block-2{
         overflow: hidden;
-        height: 150vh;
+        height: 100vh;
         width: 100vw;
         flex-direction: column;
     }
@@ -325,13 +325,13 @@ li[id^=selecionado]{
         overflow: hidden;
         padding: 0;
         width: 90%;
-        height: 60vh;
+        height: 50vh;
         margin-bottom: 2rem;
     }
     .direita{
         overflow: hidden;
         width: 90%;
-        height: 60vh;
+        height: 50vh;
     }
     .div-input textarea , input{  
         overflow: hidden;
