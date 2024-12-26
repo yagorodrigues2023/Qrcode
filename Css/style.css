@@ -123,7 +123,7 @@
     cursor: pointer;}
 li[id^=selecionado]{
     color: rgb(132, 127, 219); 
-    border-color:  rgb(132, 127, 219);}
+    border-color:  rgb(32, 25, 167);}
 .direita{
     display: flex;
     align-items: center;
@@ -298,7 +298,7 @@ li[id^=selecionado]{
 @media (max-width:1000px) {
     .interface{
         width: 100vw;
-        height: 160vh;}
+        height: 150vh;}
     
     .imagem {
         overflow: hidden;
