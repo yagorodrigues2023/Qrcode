@@ -38,7 +38,7 @@
     box-sizing: border-box;}
 .interface{
     width: 100vw;
-    height: 220vh;
+    height: 200vh;
     display: flex;
     align-items: center;
     flex-direction: column;}
@@ -296,6 +296,7 @@ li[id^=selecionado]{
 }
 
 @media (max-width:1000px) {
+
     .interface{
         width: 100vw;
         height: 150vh;}

@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded",function(){
         img.style.display = "none";
         load.style.display = "block";
         const texto =inputtext.value.trim()
-        if(texto){
+        if(texto !== ""){
             gerar(texto)
             inputtext.value= ""
             dica.style.display = "block" 
@@ -81,10 +81,9 @@ document.addEventListener("DOMContentLoaded",function(){
 
         if (!file_update) {
             alert('Selecione um arquivo primeiro!');
-            load.style.display = "none";
-            container.style.display = "block";
             img.style.display = "block";
-           
+            load.style.display = "none";
+            return;
       
           }
       
