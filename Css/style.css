@@ -331,7 +331,7 @@ li[id^=selecionado]{
     .direita{
         overflow: hidden;
         width: 90%;
-        height: 50vh;
+        height: 45vh;
     }
     .div-input textarea , input{  
         overflow: hidden;
