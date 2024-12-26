@@ -81,7 +81,11 @@ document.addEventListener("DOMContentLoaded",function(){
 
         if (!file_update) {
             alert('Selecione um arquivo primeiro!');
-            return;
+            load.style.display = "none";
+            container.style.display = "block";
+            img.style.display = "block";
+           
+      
           }
       
           const formData = new FormData();
