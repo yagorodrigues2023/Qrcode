@@ -30,10 +30,6 @@ document.addEventListener("DOMContentLoaded",function(){
 //Cria o QR code
 
     function gerar(texto){
-        container.style.display = "none"
-        container.innerHTML = ""
-        img.style.display = "none";
-        load.style.display = "block";
         new QRCode (container,{
             text: texto,
             width: 160,
@@ -50,6 +46,10 @@ document.addEventListener("DOMContentLoaded",function(){
     
     //gera o QR code
     btngerar.addEventListener('click',function(){
+        container.style.display = "none"
+        container.innerHTML = ""
+        img.style.display = "none";
+        load.style.display = "block";
         const texto =inputtext.value.trim()
         if(texto){
             gerar(texto)
