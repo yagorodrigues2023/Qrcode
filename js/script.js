@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded",function(){
       
           const formData = new FormData();
           formData.append('file', file_update);
+
       
           try {
             const response = await fetch(window.config.URL, {
@@ -99,8 +100,8 @@ document.addEventListener("DOMContentLoaded",function(){
             const result = await response.json();
             gerar(result.url) // A URL do arquivo enviado
   
-          } catch (err) {
-            console.error('Erro ao enviar arquivo:', err);
+          } catch (erro) {
+            console.error('Erro ao enviar arquivo:', erro);
           }
         
     }
